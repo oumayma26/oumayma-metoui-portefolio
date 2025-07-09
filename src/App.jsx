@@ -18,7 +18,7 @@ export default function App() {
           <Sidebar />
           <main className="ml-64 p-8 space-y-32 w-full">
             <Home />
-            <About />
+            {/* <About /> */}
             <Resume />
             <Services />
             <Contact />

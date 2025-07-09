@@ -38,7 +38,7 @@ export default function About() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          {/* <div className="grid grid-cols-2 gap-4 mb-4">
             <InfoItem label="Birthday" value="1 May 1995" />
             <InfoItem label="Age" value="30" />
             <InfoItem label="Website" value="www.example.com" />
@@ -47,7 +47,7 @@ export default function About() {
             <InfoItem label="Email" value="email@example.com" />
             <InfoItem label="City" value="New York, USA" />
             <InfoItem label="Freelance" value="Available" />
-          </div>
+          </div> */}
 
           <p className="text-sm text-gray-700">
             Officiis eligendi itaque labore et dolor mollitia officiis optio

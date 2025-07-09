@@ -1,14 +1,16 @@
 
 
-import { FaTwitter, FaFacebookF, FaInstagram, FaSkype, FaLinkedinIn, FaHome, FaUser, FaBriefcase, FaImages, FaCog } from "react-icons/fa";
+import { FaLinkedinIn, FaHome,  FaBriefcase,  FaCog, FaEnvelope, FaUser , FaFilePdf} from "react-icons/fa";
 import profile from "../../assets/profile.jpg";
 import { useActiveSection } from "./SectionContext";
+import { FaSquareGithub } from "react-icons/fa6";
+import cv from "../../assets/pdf/CV_Oumayma_Metoui_Developpeur_FullStack.pdf"
 
 export default function Sidebar() {
  const { activeSection } = useActiveSection();
   const navItems = [
     { id: "home", label: "Home", icon: <FaHome />},
-    { id: "about", label: "About", icon: <FaUser /> },
+    // { id: "about", label: "About", icon: <FaUser /> },
     { id: "resume", label: "Resume", icon: <FaBriefcase /> },
     { id: "services", label: "Services", icon: <FaCog /> },
     { id: "contact", label: "Contact", icon: <FaCog /> },
@@ -31,11 +33,11 @@ export default function Sidebar() {
       <h2 className="text-xl font-bold">Oumayma Metoui</h2>
 
       <div className="flex space-x-4 text-lg">
-        <FaTwitter />
-        <FaFacebookF />
-        <FaInstagram />
-        <FaSkype />
-        <FaLinkedinIn />
+        <a href="#contact"><FaEnvelope /> </a>
+        <a href="https://www.linkedin.com/in/oumayma-metoui-9506412a5/"  target="_blank"> <FaLinkedinIn /> </a>
+        <a href="https://github.com/oumayma26"  target="_blank">   <FaSquareGithub /> </a>
+        <a href={cv}  target="_blank">   <FaFilePdf className="text-xl" /> </a>
+
       </div>
 
       <nav className="flex flex-col w-full mt-6 space-y-2 px-6 text-left">
