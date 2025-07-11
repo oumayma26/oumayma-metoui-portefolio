@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,18 +65,15 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-.responsive-image {
-  width: 100%;
-  max-width: 800px; /* par exemple */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+@import "tailwindcss";
+
+@theme static {
+  --font-script: Great Vibes, cursive;
+  --color-night-blue: #213448;
+  --color-blue: #547792;
+  --color-sky-blue: #94B4C1;
+  --color-beige: #ECEFCA;
 }

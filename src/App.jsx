@@ -1,30 +1,28 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./Components/Shared/Layout";
-import About from "./Components/About";
-import Resume from "./Components/Resume";
-import Services from "./Components/Services";
-import Contact from "./Components/Contact";
-import { SectionProvider } from "./Components/Shared/SectionContext";
-import ScrollToHash from "./Components/Shared/ScrollToHash";
-import Sidebar from "./Components/Shared/Sidebar";
-import Home from "./Components/Home";
 
-export default function App() {
+import './App.css'
+import Footer from './layout/Footer'
+import Navbar from './layout/Navbar'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import Services from './pages/Services'
+
+function App() {
+
   return (
-     <BrowserRouter>
-      <SectionProvider>
-        <ScrollToHash />
-        <div className="flex">
-          <Sidebar />
-          <main className="ml-64 p-8 space-y-32 w-full">
-            <Home />
-            {/* <About /> */}
-            <Resume />
-            <Services />
-            <Contact />
-          </main>
-        </div>
-      </SectionProvider>
-    </BrowserRouter>
-  );
+      <div className="min-h-screen flex flex-col">
+      <Navbar />
+
+      <main className="flex-grow">
+        <section id="home" className="pt-4 mb-20"><Home /></section>
+        <section id="services" className="mb-20"><Services /></section>
+        <section id="projects" className="mb-20"><Projects /></section>
+        <section id="contact" className="mb-20"><Contact /></section>
+      </main>
+
+      <Footer />
+    </div>
+  )
 }
+
+export default App

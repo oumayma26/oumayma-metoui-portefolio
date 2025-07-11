@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { motion } from 'framer-motion';
 import { Code2, LayoutDashboard, Server, Repeat, Rocket } from 'lucide-react';
 
-const services = [
+export default function Services() {
+
+  const services = [
   {
     icon: <LayoutDashboard size={32} className="text-blue-500" />,
     title: 'Développement Frontend',
@@ -40,11 +42,10 @@ const services = [
       'Refactorisation, optimisation et évolution de vos solutions logicielles existantes.',
   },
 ];
-
-export default function Services() {
   return (
-    <section id="services" className="py-16 px-6 md:px-20 bg-white dark:bg-gray-900">
-      <motion.div
+    <section id="services" className='container mx-auto'>
+
+       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -73,5 +74,5 @@ export default function Services() {
         </div>
       </motion.div>
     </section>
-  );
+  )
 }

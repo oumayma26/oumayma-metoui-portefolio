@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../components/Button';
 
 export default function Contact() {
   const [success, setSuccess] = useState(false);
@@ -23,7 +24,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 px-6 md:px-20 bg-white dark:bg-gray-900">
+    <section id="contact" className="container mx-auto">
+
       <h2 className="text-4xl font-bold mb-10 border-b-4 inline-block border-blue-500 pb-2 dark:text-white">
         Contact
       </h2>
@@ -71,9 +73,7 @@ export default function Contact() {
               </div>
 
               <div className="text-center">
-                <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
-                  Envoyer
-                </button>
+               <Button type="submit" className="w-full md:w-auto">Envoyer</Button>
               </div>
 
               {success && (
