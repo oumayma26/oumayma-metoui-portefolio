@@ -1,7 +1,7 @@
 
 export default function Button({ children, href, onClick, type = null }) {
   const commonClasses =
-    "bg-night-blue  px-4 py-2 rounded hover:bg-sky-blue transition text-white";
+    "bg-night-blue text-white px-6 py-3 rounded hover:bg-sky-600 transition";
 
   if (type == null) {
     return (
