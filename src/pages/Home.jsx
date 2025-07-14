@@ -6,6 +6,13 @@ import { useTranslation } from 'react-i18next';
 export default function Home() {
   const { t } = useTranslation();
 
+  const trackCVDownload = () => {
+    window.gtag('event', 'click_cv', {
+      event_category: 'Button',
+      event_label: 'Télécharger le CV',
+    });
+  };
+
   return (
     <section
       id="home"
@@ -23,6 +30,7 @@ export default function Home() {
         </p>
 
         <a
+          onClick={trackCVDownload}
           href={cv}
           download
           target="_blank"

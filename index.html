@@ -11,5 +11,19 @@
 
     </div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      if (import.meta.env.PROD) {
+        const script = document.createElement('script');
+        script.setAttribute('async', '');
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX";
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX');
+      }
+  </script>
   </body>
 </html>
