@@ -11,8 +11,8 @@ export default function Navbar() {
   const { t } = useTranslation();
 
   const menuItems = [
-    { label: t("Service"), href: "#services" },
-    { label: t("Projects"), href: "#projects" },
+    { label: t("Services"), href: "#services" },
+    { label: t("Projets"), href: "#projects" },
     { label: t("Contact"), href: "#contact" },
   ];
 

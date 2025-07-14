@@ -3,8 +3,8 @@
   "Développeuse Full Stack JavaScript passionnée par la création d’expériences web modernes": "Full Stack JavaScript Developer passionate about creating modern web experiences",
   "ans d'expérience": "years of experience",
   "Télécharger le CV": "Download CV",
-  "Service": "Service",
-  "Projects": "Projects",
+  "Services": "Services",
+  "Projets": "Projects",
   "Contact": "Contact",
   "Développement Frontend": "Frontend Development",
   "Interfaces modernes, performantes et responsives avec": "Modern, high-performance, and responsive interfaces with",
@@ -28,5 +28,11 @@
   "Message": "Message",
   "Envoyer": "Send",
   "Tous droits réservés": "All rights reserved",
-  "Merci ! Votre message a été envoyé": "Thank you! Your message has been sent"
+  "Merci ! Votre message a été envoyé": "Thank you! Your message has been sent",
+  "Accueil - Oumayma Metoui": "Home - Oumayma Metoui",
+  "Portrait de Oumayma Metoui": "Portrait of Oumayma Metoui",
+  "Contact - Oumayma Metoui": "Contact - Oumayma Metoui",
+  "développement web, developpeur, frontend, backend, SEO, Angular, React, Node.js, services web, Oumayma Metoui": "web development, developer, frontend, backend, SEO, Angular, React, Node.js, web services, Oumayma Metoui",
+  "Découvrez les services de développement frontend, backend, intégration, SEO et maintenance offerts par Oumayma Metoui.": "Discover frontend, backend, integration, SEO and maintenance development services offered by Oumayma Metoui."
+
 }
