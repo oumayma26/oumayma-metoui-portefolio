@@ -1,8 +1,11 @@
 import React from 'react'
 import img from "../assets/profile/img.jpg"
 import cv from '../assets/pdf/CV_Oumayma_Metoui_Developpeur_FullStack.pdf'
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+    const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -11,13 +14,12 @@ export default function Home() {
       {/* Texte et bouton */}
       <div className="text-center md:text-left max-w-xl space-y-6">
         <h1 className="text-3xl md:text-5xl font-bold text-night-blue dark:text-white">
-          Bonjour, je suis <br />
+          {t('Bonjour, je suis')} <br />
           <span className="text-sky-500">Oumayma Metoui</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
-          Développeuse Full Stack JavaScript passionnée par la création
-          d’expériences web modernes.
+         {t('Développeuse Full Stack JavaScript passionnée par la création d’expériences web modernes')}
         </p>
 
         <a

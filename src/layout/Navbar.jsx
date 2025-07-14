@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub, FaFilePdf, FaSun, FaEnvelope } from "react-icons/
 import hamburger from "../assets/hamburger.svg";
 import close from "../assets/close.svg";
 import Button from "../components/Button";
+import LanguageSelector from "../components/LanguageSelector"
 
 const menuItems = [
   // { label: "Accueil", href: "#home" },
@@ -39,6 +40,7 @@ export default function Navbar() {
             {/* <a href="#" > <FaSun /> </a> */}
           <Button href="https://linkedin.com/in/oumayma-metoui-9506412a5" ><FaLinkedin /></Button>
           <Button href="https://github.com/oumayma26" ><FaGithub /></Button>
+          {/* <LanguageSelector /> */}
         </div>
 
         {/* === Bouton burger - mobile === */}
