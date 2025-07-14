@@ -1,19 +1,20 @@
 import { useState } from "react";
-import { FaLinkedin, FaGithub, FaFilePdf, FaSun, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import hamburger from "../assets/hamburger.svg";
 import close from "../assets/close.svg";
 import Button from "../components/Button";
-import LanguageSelector from "../components/LanguageSelector"
-
-const menuItems = [
-  // { label: "Accueil", href: "#home" },
-  { label: "Service", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
+import LanguageSelector from "../components/LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const { t } = useTranslation();
+
+  const menuItems = [
+    { label: t("Service"), href: "#services" },
+    { label: t("Projects"), href: "#projects" },
+    { label: t("Contact"), href: "#contact" },
+  ];
 
   const renderMenuItems = () =>
     menuItems.map(({ label, href }) => (
@@ -37,14 +38,21 @@ export default function Navbar() {
         </ul>
 
         <div className="absolute right-0 hidden sm:flex items-center gap-4 text-xl text-gray-700 px-2">
-            {/* <a href="#" > <FaSun /> </a> */}
-          <Button href="https://linkedin.com/in/oumayma-metoui-9506412a5" ><FaLinkedin /></Button>
-          <Button href="https://github.com/oumayma26" ><FaGithub /></Button>
-          {/* <LanguageSelector /> */}
+          <Button href="https://linkedin.com/in/oumayma-metoui-9506412a5">
+            <FaLinkedin />
+          </Button>
+          <Button href="https://github.com/oumayma26">
+            <FaGithub />
+          </Button>
+          <LanguageSelector />
         </div>
 
         {/* === Bouton burger - mobile === */}
-        <button onClick={() => setShowMenu(!showMenu)} className="sm:hidden ml-auto" aria-label="Toggle menu">
+        <button
+          onClick={() => setShowMenu(!showMenu)}
+          className="sm:hidden ml-auto"
+          aria-label="Toggle menu"
+        >
           <img className="w-5" src={showMenu ? close : hamburger} alt="menu" />
         </button>
       </div>
