@@ -1,12 +1,12 @@
 import React from "react";
 import img from "../assets/profile/img.jpg";
-import cv from "../assets/pdf/CV_Oumayma_Metoui_Developpeur_FullStack.pdf";
+// import cv from "../assets/pdf/CV_Oumayma_Metoui_Developpeur_FullStack.pdf";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
-
+  const cv = "https://oumayma26.github.io/CV-oumayma/cv-oumaymaMETOUI.pdf"
   const trackCVDownload = () => {
     if (window.gtag) {
       window.gtag("event", "click_cv", {
