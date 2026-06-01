@@ -1,8 +1,10 @@
-import React from "react";
-import img from "../assets/profile/img.jpg";
-// import cv from "../assets/pdf/CV_Oumayma_Metoui_Developpeur_FullStack.pdf";
-import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
+import img from "../assets/profile/img.jpg";
+
+// import cv from "../assets/pdf/CV_Oumayma_Metoui_Developpeur_FullStack.pdf";
+
+
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -25,7 +27,7 @@ export default function Home() {
         <meta
           name="description"
           content={t(
-            "Développeuse Full Stack passionnée par la création d’expériences web modernes."
+            "Senior Full Stack Engineer ayant construit des systèmes industriels temps réel pendant 7 ans"
           )}
         />
       </Helmet>
@@ -43,7 +45,7 @@ export default function Home() {
 
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
             {t(
-              "Développeuse Full Stack JavaScript passionnée par la création d’expériences web modernes"
+              "Senior Full Stack Engineer ayant construit des systèmes industriels temps réel pendant 7 ans"
             )}
           </p>
 
